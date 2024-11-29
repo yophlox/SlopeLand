@@ -18,7 +18,7 @@ class FlxOgmo3LoaderExt extends FlxOgmo3Loader
 		
 	}
 	
-	public function loadTilemapExt(tileGraphic:Dynamic, tileLayer:String = "tiles"):FlxTilemapExt
+	override public function loadTilemapExt(tileGraphic:Dynamic, tileLayer:String = "tiles", ?tilemap:FlxTilemapExt):FlxTilemapExt
 	{
 		var tilemap = new FlxTilemapExt();
 		var layer = getTileLayer(level, tileLayer);
